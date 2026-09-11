@@ -1,0 +1,15 @@
+{
+  "short_name": "ChargeMate",
+  "name": "ChargeMate — Unified EV Charging Platform",
+  "icons": [
+    {
+      "src": "/chargemate-icon.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192 512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "display": "standalone"
+}

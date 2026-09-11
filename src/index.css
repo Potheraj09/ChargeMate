@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* Leaflet Container & Clean Map Tiles */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background-color: #0d131f !important;
+  font-family: inherit;
+}
+
+/* Soothing Eye-Friendly Dark Map Tiles (Non-glaring Slate/Navy) */
+.dark-map-tiles {
+  filter: brightness(0.88) invert(0.92) contrast(1.08) hue-rotate(190deg) saturate(0.22);
+}
+
+/* Crisp Natural Daytime Map Tiles */
+.light-map-tiles {
+  filter: saturate(0.92) contrast(1.02) brightness(0.98);
+}
+
+/* Custom Leaflet Popups - Dark */
+.custom-leaflet-popup .leaflet-popup-content-wrapper {
+  background: #141c2b !important;
+  color: #f1f5f9 !important;
+  border-radius: 12px !important;
+  border: 1px solid #273549 !important;
+  box-shadow: 0 16px 32px -6px rgba(0, 0, 0, 0.45) !important;
+  padding: 4px !important;
+}
+
+.custom-leaflet-popup .leaflet-popup-tip {
+  background: #141c2b !important;
+  border: 1px solid #273549 !important;
+}
+
+.custom-leaflet-popup .leaflet-popup-content {
+  margin: 10px 14px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  color: #94a3b8 !important;
+  padding: 6px !important;
+}
+
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: #f1f5f9 !important;
+}
+
+/* Hide scrollbars cleanly */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Subtle, calm pulsing indicators (no eye-sore glare) */
+@keyframes soft-pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.15;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse-ring 2.4s cubic-bezier(0.2, 0.6, 0.35, 1) infinite;
+}

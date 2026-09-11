@@ -1,0 +1,6 @@
+{
+  "name": "ChargeMate",
+  "description": "Unified EV charging discovery, booking, and navigation platform aggregating multi-network chargers with real GPS.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
