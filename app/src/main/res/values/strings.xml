@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ChargeMate</string>
+    <string name="tab_map">Map</string>
+    <string name="tab_stations">Stations</string>
+    <string name="tab_bookings">Bookings</string>
+    <string name="tab_vehicle">Vehicle</string>
+    <string name="tab_favorites">Saved</string>
+    <string name="action_book_now">Book Slot</string>
+    <string name="action_navigate">Navigate</string>
+    <string name="action_cancel_booking">Cancel &amp; Refund</string>
+    <string name="action_club10">Club 10+</string>
+</resources>
